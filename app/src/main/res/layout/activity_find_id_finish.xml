@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Find_Id_Main_Activity">
+
+
+    <ImageView
+        android:id="@+id/complete_icon"
+        android:layout_width="64dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/check_icon"
+        app:layout_constraintBottom_toTopOf="@+id/complete_text"
+        app:layout_constraintEnd_toEndOf="@+id/complete_text"
+        app:layout_constraintStart_toStartOf="@+id/complete_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="188dp"
+        android:text="yesable123"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/find_password_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complete_text" />
+
+    <TextView
+        android:id="@+id/find_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="이 아이디로 비밀번호 찾기"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_display" />
+
+    <!-- 아이디 표시 텍스트 -->
+
+
+    <!-- 아이디 찾기 버튼 -->
+
+    <TextView
+        android:id="@+id/complete_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="4dp"
+        android:text="아이디 찾기 완료"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/id_display"
+        app:layout_constraintStart_toStartOf="@+id/id_display"
+        app:layout_constraintTop_toBottomOf="@+id/complete_icon" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/ButtonStyleColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="29dp"
+        android:text="로그인"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_password_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
